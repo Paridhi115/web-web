@@ -38,7 +38,7 @@ header {
 }
 
 .logo {
-    background-image: url("llogo.png");
+    background-image: url("/assets/images/llogo.png");
     height: 15vh;
     width: 19vw;
     background-size: contain;

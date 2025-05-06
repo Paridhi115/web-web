@@ -57,7 +57,7 @@ body {
 }
 
 .logo {
-    background-image: url("llogo.png");
+    background-image: url("/assets/images/llogo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -129,7 +129,7 @@ body {
     justify-content: center;
     height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("auto.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/auto.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -305,12 +305,12 @@ body {
 }
 
 /* BOX BACKGROUNDS */
-.box1::before { background-image: url("tl.png"); }
-.box2::before { background-image: url("hb4lll.png"); }
-.box3::before { background-image: url("qw.png"); }
-.box4::before { background-image: url("pt.png"); }
-.box5::before { background-image: url("pt3.png"); }
-.box6::before { background-image: url("fil.png"); }
+.box1::before { background-image: url("/assets/images/tl.png"); }
+.box2::before { background-image: url("/assets/images/hb4lll.png"); }
+.box3::before { background-image: url("/assets/images/qw.png"); }
+.box4::before { background-image: url("/assets/images/pt.png"); }
+.box5::before { background-image: url("/assets/images/pt3.png"); }
+.box6::before { background-image: url("/assets/images/fil.png"); }
 
 /* FOOTER */
 .footer {

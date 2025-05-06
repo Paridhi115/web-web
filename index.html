@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverLux Automobiles | Premium Car Manufacturer</title>
+    <link rel="stylesheet" href="assets/css/everlux.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logobox">
+                <div class="logo"></div>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="nav-links" id="nav-menu">
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="#career">Career</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="front">
+        <div class="banner-content fade-in">
+            <h1>Experience Luxury Performance</h1>
+            <p>Discover our range of premium vehicles engineered for excellence and designed for the future.</p>
+            <button class="banner-btn">Explore Models</button>
+        </div>
+    </div>
+    
+    <div class="box-section">
+        <h2 class="section-title">Our Premium Collection</h2>
+        
+        <div class="box box1">
+            <div class="box-content">
+                <h3>Tail light</h3>
+                <p>Refined elegance with cutting-edge technology and superior comfort.</p>
+                <a href="#" class="box-btn">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="box box2">
+            <div class="box-content">
+                <h3>Indicator</h3>
+                <p>Commanding presence with versatile performance for any terrain.</p>
+                <a href="#" class="box-btn">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="box box3">
+            <div class="box-content">
+                <h3>Head light</h3>
+                <p>Breathtaking performance with aerodynamic design and precision handling.</p>
+                <a href="#" class="box-btn">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="box box4">
+            <div class="box-content">
+                <h3>Meter case</h3>
+                <p>Zero-emission innovation with uncompromising luxury and range.</p>
+                <a href="#" class="box-btn">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="box box5">
+            <div class="box-content">
+                <h3>Rear view mirror</h3>
+                <p>Track-inspired engineering with everyday drivability and comfort.</p>
+                <a href="#" class="box-btn">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="box box6">
+            <div class="box-content">
+                <h3>Filters</h3>
+                <p>Versatile design combining practicality with distinctive EverLux styling.</p>
+                <a href="#" class="box-btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About EverLux</h3>
+                <p>EverLux Automobiles represents the pinnacle of automotive engineering and design. With a commitment to innovation and sustainability, we create vehicles that define the future of luxury transportation.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-angle-right"></i> Our History</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> Innovation</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> Sustainability</a>
+                    <a href="#"><i class="fas fa-angle-right"></i> Press Room</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> 1234 Luxury Drive, Suite 500</a>
+                    <a href="#"><i class="fas fa-phone"></i> +1 (555) 123-4567</a>
+                    <a href="#"><i class="fas fa-envelope"></i> info@everlux.com</a>
+                    <a href="#"><i class="fas fa-globe"></i> www.everlux.com</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 EverLux Automobiles. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+
+        // Add fade-in animation to elements as they appear in viewport
+        document.addEventListener('DOMContentLoaded', function() {
+            const boxes = document.querySelectorAll('.box');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            boxes.forEach(box => {
+                observer.observe(box);
+            });
+        });
+    </script>
+</body>
+</html>
